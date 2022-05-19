@@ -3,7 +3,8 @@
 	<PropertyGroup>
 		<PackageId>StrEnum.AspNetCore</PackageId>
 		<Description>String enum support for ASP.NET Core.</Description>
-		<Authors>dmitry-khmara</Authors>
+		<Authors>Dmitry Khmara</Authors>
+		<Copyright>Copyright Dmitry Khmara</Copyright>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>StringEnum;String;Enum;ASP.NET Core</PackageTags>
 		<PackageIcon>icon.png</PackageIcon>
