@@ -2,7 +2,7 @@
 
 namespace StrEnum.AspNetCore.ModelBinding;
 
-internal class StringEnumModelBinder: IModelBinder
+internal class StringEnumModelBinder : IModelBinder
 {
     public Task BindModelAsync(ModelBindingContext bindingContext)
     {
@@ -45,24 +45,18 @@ internal class StringEnumModelBinder: IModelBinder
     {
         var stringEnumBase = typeof(StringEnum<>).MakeGenericType(modelType);
 
-        var tryParseMethod = stringEnumBase.GetMethod("TryParse", 
-            new[] { typeof(string), typeof(bool), modelType.MakeByRefType() });
+        var tryParseMethod = stringEnumBase.GetMethod("TryParse",
+            new[] { typeof(string), modelType.MakeByRefType(), typeof(bool), typeof(MatchBy) });
 
-        var tryParseParameters = new object?[] { value, true, null };
+        var tryParseParameters = new object?[] { value, null, true, MatchBy.ValueOnly };
 
         var parsed = (bool)(tryParseMethod?.Invoke(null, tryParseParameters) ?? false);
 
         if (parsed)
         {
-            var castToString = stringEnumBase.GetMethod("op_Explicit"); 
+            member = tryParseParameters[1];
 
-            var parsedMemberValue = (string)castToString!.Invoke(null,new[]{ tryParseParameters[2]})!;
-
-            if (parsedMemberValue.Equals(value, StringComparison.InvariantCultureIgnoreCase))
-            {
-                member = tryParseParameters[2];
-                return true;
-            }
+            return true;
         }
 
         member = null;

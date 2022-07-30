@@ -19,8 +19,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="StrEnum" Version="[1.4.0,2.0.0)" />
-		<PackageReference Include="StrEnum.System.Text.Json" Version="[1.1.0,2.0.0)" />
+		<PackageReference Include="StrEnum" Version="[2.0.0,3.0.0)" />
+		<PackageReference Include="StrEnum.System.Text.Json" Version="[2.0.0,3.0.0)" />
 	</ItemGroup>
 
 	<ItemGroup>
