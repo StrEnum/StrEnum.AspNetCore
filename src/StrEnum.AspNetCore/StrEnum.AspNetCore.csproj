@@ -20,7 +20,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="StrEnum" Version="[2.0.0,3.0.0)" />
-		<PackageReference Include="StrEnum.System.Text.Json" Version="[2.0.0,3.0.0)" />
+		<PackageReference Include="StrEnum.System.Text.Json" Version="[2.1.1,3.0.0)" />
 	</ItemGroup>
 
 	<ItemGroup>
