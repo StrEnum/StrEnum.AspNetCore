@@ -2,7 +2,7 @@
 
 Allows to use [StrEnum](https://github.com/StrEnum/StrEnum/) string enums with ASP.NET Core.
 
-Supports ASP.NET Core 3.1–6.0
+Supports ASP.NET Core 3.1–7.0
 
 ## Installation
 
