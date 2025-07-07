@@ -3,8 +3,8 @@
 	<PropertyGroup>
 		<PackageId>StrEnum.AspNetCore</PackageId>
 		<Description>String enum support for ASP.NET Core.</Description>
-		<Authors>Dmitry Khmara</Authors>
-		<Copyright>Copyright Dmitry Khmara</Copyright>
+		<Authors>Dmytro Khmara</Authors>
+		<Copyright>Copyright Dmytro Khmara</Copyright>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>StringEnum;String;Enum;ASP.NET Core</PackageTags>
 		<PackageIcon>icon.png</PackageIcon>
@@ -12,7 +12,7 @@
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/StrEnum/StrEnum</RepositoryUrl>
 
-		<TargetFrameworks>netcoreapp3.1;net6.0;net7.0</TargetFrameworks>
+		<TargetFrameworks>netcoreapp3.1;net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<LangVersion>10.0</LangVersion>
 		<Nullable>enable</Nullable>
@@ -20,7 +20,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="StrEnum" Version="[2.0.0,3.0.0)" />
-		<PackageReference Include="StrEnum.System.Text.Json" Version="[2.1.1,3.0.0)" />
+		<PackageReference Include="StrEnum.System.Text.Json" Version="[2.1.1,10.0.0)" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -2,7 +2,9 @@
 
 Allows to use [StrEnum](https://github.com/StrEnum/StrEnum/) string enums with ASP.NET Core.
 
-Supports ASP.NET Core 6 and 7. ASP.NET Core 5 supported in v2.0.0.
+Supports ASP.NET Core 6, 7, 8, and 9.
+
+ASP.NET Core 5 supported in v2.0.0.
 
 ## Installation
 
@@ -14,7 +16,7 @@ dotnet add package StrEnum.AspNetCore
 
 ## Usage
 
-If you're using the new ASP.NET Core 6`WebApplicationBuilder`,  add the call to `AddStringEnums()` into your `Program.cs`:
+If you're using `WebApplicationBuilder`,  add the call to `AddStringEnums()` into your `Program.cs`:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
@@ -24,7 +26,7 @@ builder.Services
     .AddStringEnums();
 ```
 
-If you're using the ASP.NET Core 3.1/5 `IWebHostBuilder`, call `AddStringEnums()` in the `ConfigureServices` method of your `Startup.cs`:
+If you're using the ASP.NET Core 3.1-5 `IWebHostBuilder`, call `AddStringEnums()` in the `ConfigureServices` method of your `Startup.cs`:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -89,6 +91,6 @@ public ActionResult<ResponseWithStrEnum> GetFromQuery([FromQuery] Sport[] sports
 
 ## License
 
-Copyright &copy; 2022 [Dmitry Khmara](https://dmitrykhmara.com).
+Copyright &copy; 2025 [Dmytro Khmara](https://dmytrokhmara.com).
 
 StrEnum is licensed under the [MIT license](LICENSE.txt).
