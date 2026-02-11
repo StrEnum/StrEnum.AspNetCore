@@ -2,7 +2,7 @@
 
 Allows to use [StrEnum](https://github.com/StrEnum/StrEnum/) string enums with ASP.NET Core.
 
-Supports ASP.NET Core 6, 7, 8, and 9.
+Supports ASP.NET Core 6-10.
 
 ASP.NET Core 5 supported in v2.0.0.
 
@@ -91,6 +91,6 @@ public ActionResult<ResponseWithStrEnum> GetFromQuery([FromQuery] Sport[] sports
 
 ## License
 
-Copyright &copy; 2025 [Dmytro Khmara](https://dmytrokhmara.com).
+Copyright &copy; 2026 [Dmytro Khmara](https://dmytrokhmara.com).
 
 StrEnum is licensed under the [MIT license](LICENSE.txt).
